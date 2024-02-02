@@ -1,0 +1,2 @@
+for i in `seq 1 3`;do sshpass -p 'pass123' ssh-copy-id -i rke.pub -o StrictHostKeyChecking=no rke@production-master-0"$i";done
+for i in `seq 1 3`;do sshpass -p 'pass123' ssh-copy-id -i rke.pub -o StrictHostKeyChecking=no rke@production-worker-0"$i";done

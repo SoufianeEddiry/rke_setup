@@ -1,0 +1,1 @@
+ssh-keygen -q -C "RKE cluster Boostraping" -t ed25519 -f rke
