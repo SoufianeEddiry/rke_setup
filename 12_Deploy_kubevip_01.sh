@@ -1,0 +1,1 @@
+for i in `seq 1 3`;do scp -o StrictHostKeyChecking=no "${PWD}"/kube_config_cluster.yml sagiruser@production-master-0"$i":/home/sagiruser/admin.conf;done
